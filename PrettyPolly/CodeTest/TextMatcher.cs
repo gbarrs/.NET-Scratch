@@ -73,7 +73,9 @@ namespace CodeTest
             int subtextCharacterPosition = 0;
             int matchStartPosition = textCharacterPosition;
 
-            while (subtextCharacterPosition < _subtext.Length
+                while (subtextCharacterPosition < _subtext.Length   
+                    &&
+                    textCharacterPosition < _text.Length
                     &&
                     caseInsensitiveCharactersMatch(_subtext[subtextCharacterPosition], _text[textCharacterPosition]))
             {

@@ -49,6 +49,7 @@
     <Compile Include="MainControllerTests.cs" />
     <Compile Include="MatchTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpecificationExtensions.cs" />
     <Compile Include="TextMatcherTests.cs" />
   </ItemGroup>
   <ItemGroup>

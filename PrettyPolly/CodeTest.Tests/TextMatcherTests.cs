@@ -153,5 +153,17 @@ namespace CodeTest.Tests.Unit
             Assert.True(matches.First().StartPosition == 4);   
         }
 
+        [Test]
+        public void Match_AttemptToMatchPastLastCharacterOfText_ListContainsNoMatches()
+        {
+            const string text = "abcxyzabc";
+            const string subtext = "ccc";
+            var textMatcher = new TextMatcher(text, subtext);
+
+            textMatcher.Match();
+            var matches = textMatcher.GetMatches();
+            matches.Count().should_equal(0);
+        }
+
     }
 }
