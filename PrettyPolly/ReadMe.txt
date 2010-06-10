@@ -1,0 +1,1 @@
+This is a place to keep unimportant pieces of code.  It's mainly for me to practice using GIT and GIT commands.
